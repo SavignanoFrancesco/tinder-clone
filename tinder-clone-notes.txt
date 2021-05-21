@@ -9,4 +9,10 @@ https://material-ui.com/components/material-icons/
 BACKEND
 starts at 01:14:00
 
-PROGRESS TIME
+BACKEND DEPLOY
+heroku
+M3rnc0r3`
+
+FRONTEND DEPLOY 
+firebase
+google crdentials
