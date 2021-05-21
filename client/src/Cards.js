@@ -1,24 +1,26 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Cards.css';
 import TinderCard from "react-tinder-card";
+import axios from './axios.js'
+import instance from "./axios.js";
 
 
 function Cards(){
 
-    const [people, setPeople] = useState([
-        {
-            name: 'Adam Jones',
-            url: 'https://www.ultimate-guitar.com/static/article/news/4/96314_0_meta_ver1567264515.jpg'
-        },
-        {
-            name: 'Janis Joplin',
-            url: 'https://www.periodicodaily.com/wp-content/uploads/2019/10/janis-joplin-morte.jpg'
-        },
-        {
-            name: 'Amy Winehouse',
-            url: 'https://www.rockarchive.com/media/1016/amy-winehouse-amyw001mmaw.jpg?crop=0,0.046048722519310754,0,0.28550207961972673&cropmode=percentage&width=480&height=480&rnd=131147896120000000'
+    const [people, setPeople] = useState([]);
+
+    useEffect(() => {
+
+        async function fetchData() {
+
+            const req = await axios.get('/cards');
+            setPeople(req.data);
+
         }
-    ]);
+
+        fetchData();
+
+    }, []);
 
     const swiped = (direction, nameToDelete) => {
         console.log(nameToDelete + ' deleted!');
@@ -40,7 +42,7 @@ function Cards(){
                         onCardLeftScreen={() => outOfFrame(person.name)}
                         >
                             <div
-                            style={{backgroundImage: 'url(' + person.url + ')'}}
+                            style={{backgroundImage: 'url(' + person.imgUrl + ')'}}
                             className="card"
                             >
                                 <h3>{person.name}</h3>
