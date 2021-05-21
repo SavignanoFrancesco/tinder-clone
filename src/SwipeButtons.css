@@ -1,0 +1,31 @@
+.swipe-buttons{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+
+.swipe-buttons .icon-button{
+    background: white;
+    box-shadow: 0px 10px 50px 0px rgba(0,0,0,0.3) !important;
+    margin: 5px;
+}
+
+.swipe-button-repeat{
+    color: lightsalmon !important;
+}
+.swipe-button-left{
+    color: lightcoral !important;
+}
+.swipe-button-star{
+    color: lightblue !important;
+}
+.swipe-button-right{
+    color: lightgreen !important;
+}
+.swipe-button-lightning{
+    color: lightslategray !important;
+}

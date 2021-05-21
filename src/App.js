@@ -1,15 +1,15 @@
 import React from 'react';
-import Header from './Header.js'
 import './App.css';
+import Header from './Header.js'
 import Cards from "./Cards";
+import SwipeButtons from "./SwipeButtons";
 
 function App() {
   return (
-    //BEM class name convention
     <div className="app">
         <Header />
         <Cards />
-        {/*swipeButtons*/}
+        <SwipeButtons />
     </div>
   );
 }

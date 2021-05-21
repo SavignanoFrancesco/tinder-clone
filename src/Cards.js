@@ -8,15 +8,15 @@ function Cards(){
     const [people, setPeople] = useState([
         {
             name: 'Adam Jones',
-            url: 'https://lh3.googleusercontent.com/proxy/Z757meKL54RXjdM2CR9jKABJIz_1ySOESfoKbOij1korRPfcTMFKBmAgVRxvdvmN9gbqTUUOUX0_tQRFnS8X45BIL23cdcalY-DURhmhGojAybrmJ99XSPOX6UsYTH8n3XX7w1Vj7-Ei'
+            url: 'https://www.ultimate-guitar.com/static/article/news/4/96314_0_meta_ver1567264515.jpg'
         },
         {
             name: 'Janis Joplin',
-            url: 'https://i0.wp.com/stonemusic.it/wp-content/uploads/2020/04/janisjoplin3-.jpg?fit=1024%2C683&ssl=1'
+            url: 'https://www.periodicodaily.com/wp-content/uploads/2019/10/janis-joplin-morte.jpg'
         },
         {
             name: 'Amy Winehouse',
-            url: 'https://lh3.googleusercontent.com/proxy/U8T1l6qIvmuP-VecvlsHI_5-1LOxmb8_O1OvCZTMvgThvoEapqKgCMMdQx7ETQx8AnMydeyNjLLATSnzShb_Hh2fOLZehcbLdqgWtuoyNgsJq069MO3UBAQPDevQo89cqFF39UD5xBiH7ylBplV3bA'
+            url: 'https://www.rockarchive.com/media/1016/amy-winehouse-amyw001mmaw.jpg?crop=0,0.046048722519310754,0,0.28550207961972673&cropmode=percentage&width=480&height=480&rnd=131147896120000000'
         }
     ]);
 
