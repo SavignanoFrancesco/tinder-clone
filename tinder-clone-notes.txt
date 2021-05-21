@@ -1,0 +1,12 @@
+PROJECT INITIALIZATION
+npx create-react-app project_name
+
+MATERIAL UI
+npm install @material-ui/core
+npm install @material-ui/icons
+https://material-ui.com/components/material-icons/
+
+BACKEND
+starts at 01:14:00
+
+PROGRESS TIME
